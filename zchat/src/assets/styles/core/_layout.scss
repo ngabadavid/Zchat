@@ -1,0 +1,203 @@
+.zchat-body {
+    display: flex;
+    flex-direction: row;
+   
+    .zchat-container{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top: 50px;
+        left: 50px;
+        width: calc(100%  - 50px);
+        .zchat-list{ 
+        
+            background-color: red;
+        }
+        .zchat-content{
+            background-color: blue;
+        }
+        
+        @media (min-width: 767px) and (max-width: 991px) {
+            /* screen size between sm and md */
+            .zchat-list {
+                width:38.34%;
+                background-color: red;
+            }
+            .zchat-content {
+                width:61.66%;
+                background-color: blue;
+            }
+        }
+        
+        @media (min-width: 991px) {
+            /* screen size larger than md */
+            .zchat-list {
+                width:38.34%;
+                max-width:380px;
+            }
+            .zchat-content {
+                width:61.66%;
+                min-width: calc(100% - 380px);
+            }
+        }
+        
+        @media (max-width: 767px) {
+            /* screen size under sm */
+            .zchat-list {
+                width:38.34%;
+                min-width:270px;
+            }
+            .zchat-content {
+                width: 61.66%;
+                max-width: calc(100% - 270px);
+            }
+        }
+    }
+    
+
+
+   
+  
+
+
+
+    .zchat-list-container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: calc(100% - 50px);
+        overflow-y: scroll;
+        
+        background-color: white;
+
+        .zchat-list-header {
+            display: flex;
+            width: 100%;
+
+            .zchat-list-header-title {}
+
+            .zchat-list-header-action {
+                display: flex;
+
+                .zchat-button {
+                    border: none;
+                    background: none;
+                    position: relative;
+                    width: 50px;
+                    height: 36px;
+                    border-radius: 3px;
+
+                    .zchat-button-svg {
+                        position: absolute;
+                        top: calc(50% - 9px);
+                        left: calc(50% - 9px);
+                    }
+                }
+
+                .zchat-button:hover {
+                    background-color: rgb(240, 240, 240);
+                }
+            }
+        }
+
+        .zchat-list-body {
+            width: 100%;
+        }
+    }
+
+    .zchat-main-container {
+        width: 100%;
+        height: 100%;
+        background-color: red;
+    }
+
+}
+
+.container {
+    margin-left: 72px;
+    width: 401px;
+    position: fixed;
+    height: calc(100% - 50px);
+    overflow-y: scroll;
+    top: 50px;
+
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-shrink: 0 !important;
+    align-items: stretch !important;
+    background-color: #fff !important;
+    width: 380px;
+
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+.zchat-sidebar {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-shrink: 0 !important;
+    background-color: #f8f9fa !important;
+    width: 4.5rem;
+}
