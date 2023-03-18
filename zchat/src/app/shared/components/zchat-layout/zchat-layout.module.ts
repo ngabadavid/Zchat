@@ -1,21 +1,22 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ZchatLayoutComponent } from './zchat-layout.component';
-import { ZchatSidebarComponent } from './zchat-sidebar/zchat-sidebar.component';
-import { ZchatListComponent } from './zchat-list/zchat-list.component';
-import { ZchatHeaderComponent } from './zchat-header/zchat-header.component';
-import { ZchatButtonModule } from '../zchat-button/zchat-button.module';
+import { CommonModule } from "@angular/common"
+import { NgModule } from "@angular/core"
+import { ZchatButtonModule } from "../zchat-button/zchat-button.module"
+import { ZchatListModule } from "../zchat-list/zchat-list.module"
+import { ZchatHeaderComponent } from "./zchat-header/zchat-header.component"
+import { ZchatLayoutComponent } from "./zchat-layout.component"
+import { ZchatSidebarComponent } from "./zchat-sidebar/zchat-sidebar.component"
 
 
-const ZCHAT_COMPONENT = [ZchatHeaderComponent, ZchatLayoutComponent, ZchatListComponent, ZchatSidebarComponent]
-const ZCHAT_MODULE = [ZchatButtonModule]
+
+const ZCHAT_COMPONENT = [ZchatHeaderComponent, ZchatLayoutComponent, ZchatSidebarComponent]
+
 @NgModule({
   declarations: [
-    ... ZCHAT_COMPONENT
+    ... ZCHAT_COMPONENT,
   ],
   imports: [
     CommonModule,
-    ... ZCHAT_MODULE
+    ZchatListModule
   ],
   exports: [
     ... ZCHAT_COMPONENT

@@ -1,0 +1,19 @@
+
+.zchat-button {
+    border: none;
+    background: none;
+    position: relative;
+    width: 50px;
+    height: 36px;
+    border-radius: 3px;
+
+    .zchat-button-svg {
+        position: absolute;
+        top: calc(50% - 9px);
+        left: calc(50% - 9px);
+    }
+}
+
+.zchat-button:hover {
+    background-color: rgb(240, 240, 240);
+}
