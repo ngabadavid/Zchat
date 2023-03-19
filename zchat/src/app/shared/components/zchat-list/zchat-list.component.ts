@@ -8,6 +8,7 @@ import { ZchatBaseComponent } from "../zchat-base.component";
 })
 export class ZchatListComponent extends ZchatBaseComponent {
   @Input() listTitle: string = 'Chats';
+  @Input() searchBar: boolean = true;
 
   constructor() {
     super();

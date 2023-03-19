@@ -1,6 +1,10 @@
 @import 'core/layout';
 @import 'core/global';
+@import 'core/inputs/buttons';
+
 @import 'components/zchat-list';
 @import 'components/zchat-search-bar';
-@import 'core/inputs/buttons';
+
+@import 'container/zchat-chats-container';
+
 @import './node_modules/bootstrap/scss/bootstrap';

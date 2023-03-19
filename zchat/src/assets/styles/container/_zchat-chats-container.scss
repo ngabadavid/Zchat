@@ -1,0 +1,56 @@
+.zchat-caret-remover::after {
+    display: none !important;
+}
+.zchat-dropdown-menu{
+    .zchat-icon-svg{
+        margin-right: 8px;
+        
+    }
+    .bi-chevron-right{
+        margin-right: -8px;
+    }
+    .zchat-dropdown-menu-body {
+        width:200px;
+     
+        .zchat-dropdown-item {
+            width:calc(100% - 10px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: inherit;
+            margin-left: 5px;
+            margin-right: 5px;
+            .test{
+                display: flex;
+                align-items: center;
+            }
+            .zchat-sub-dropdown-menu-body{
+                transform: translate(170px, 48px);
+                .zchat-sub-dropdown-item {
+                    width:calc(100% - 10px);
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    border-radius: inherit;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    
+        
+    }
+    .zchat-dropdown-item{
+        .zchat-sub-dropdown-menu-body {
+            width:200px;
+            .zchat-dropdown-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        
+            
+        }
+    }
+    
+}

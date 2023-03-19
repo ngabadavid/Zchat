@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: auto;
-    height: calc(100% - 50px);
+    height: 100%;
     background-color: white;
 
     .zchat-list-header {
@@ -15,15 +15,20 @@
             justify-content: space-between;
             margin-left: 25px;
             margin-right: 25px;
+            margin-top: 10px;
             margin-bottom: 10px;
 
             .zchat-list-header-title {
                 @extend #{'.fs-5','.fw-semibold'};
+                margin-left: 16px;
             }
 
             .zchat-list-header-action {
                 display: flex;
             }
+        }
+        .zchat-list-header-second-row {
+            margin-bottom: 10px;
         }
     }
 

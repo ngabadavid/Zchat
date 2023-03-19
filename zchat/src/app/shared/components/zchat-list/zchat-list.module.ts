@@ -5,6 +5,7 @@ import { ZchatListItemContentDirective } from './zchat-list-item/zchat-list-item
 import { ZchatListComponent } from './zchat-list.component';
 import { ZchatButtonModule } from '../zchat-button/zchat-button.module';
 import { ZchatSearchBarModule } from '../zchat-search-bar/zchat-search-bar.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [

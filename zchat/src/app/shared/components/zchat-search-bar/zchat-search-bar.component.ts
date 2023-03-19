@@ -27,7 +27,6 @@ export class ZchatSearchBarComponent extends ZchatBaseComponent {
   }
 
   isEmpty() {
-    console.log("3=> "+this.searchBarValue)
     return this.searchBarValue == ''
   }
 

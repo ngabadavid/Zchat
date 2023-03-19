@@ -1,5 +1,6 @@
 import { CommonModule } from "@angular/common"
 import { NgModule } from "@angular/core"
+import { RouterModule } from "@angular/router"
 import { ZchatButtonModule } from "../zchat-button/zchat-button.module"
 import { ZchatListModule } from "../zchat-list/zchat-list.module"
 import { ZchatHeaderComponent } from "./zchat-header/zchat-header.component"
@@ -16,6 +17,7 @@ const ZCHAT_COMPONENT = [ZchatHeaderComponent, ZchatLayoutComponent, ZchatSideba
   ],
   imports: [
     CommonModule,
+    RouterModule,
     ZchatListModule
   ],
   exports: [
