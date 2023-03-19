@@ -7,7 +7,7 @@ import { ZchatBaseComponent } from "../zchat-base.component";
   templateUrl: './zchat-list.component.html'
 })
 export class ZchatListComponent extends ZchatBaseComponent {
-  @Input() listTitle: string = 'Chats';
+  @Input() listTitle: string = '';
   @Input() searchBar: boolean = true;
 
   constructor() {

@@ -54,3 +54,16 @@
     }
     
 }
+
+.zchat-dropdown-new-chat{
+    .zchat-dropdown-new-chat-body{
+        width: 300px;
+        height:550px;
+        .zchat-dropdown-new-chat-list{
+            .zchat-list-header-title {
+                margin-left: 0px;
+            }
+        }
+        
+    }
+}
