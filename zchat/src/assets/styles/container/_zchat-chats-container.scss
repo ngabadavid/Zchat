@@ -2,13 +2,16 @@
     display: none !important;
 }
 .zchat-dropdown-menu{
+    position: relative;
+    .zchat-button-svg {
+        position: absolute;
+        top: calc(50% - 12px);
+        left: calc(50% - 12px);
+    }
     .zchat-icon-svg{
         margin-right: 8px;
-        
     }
-    .bi-chevron-right{
-        margin-right: -8px;
-    }
+
     .zchat-dropdown-menu-body {
         width:200px;
      

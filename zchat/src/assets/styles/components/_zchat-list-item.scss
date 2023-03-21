@@ -1,0 +1,137 @@
+.zchat-list-item {
+    display: flex;
+    align-items: center;
+    width: auto;
+    border-radius: 5px;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    font-size: 0.9em;
+
+    .zchat-list-item-picture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+
+        .zchat-profile-picture {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+    }
+
+    .zchat-list-item-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        height: 62px;
+        width:calc(100% - 64px);
+
+        .zchat-list-item-content-first-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 12px;
+
+            .zchat-sender {
+                @extend #{'.fw-bold'};
+                text-align: center;
+
+            }
+
+            .zchat-time {
+                @extend #{'.fw-light'};
+                font-size: 0.7rem;
+            }
+        }
+
+        .zchat-list-item-content-second-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 12px;
+
+            .zchat-description {
+                display: flex;
+                align-items: center;
+                flex-grow: 1;
+                
+                margin-right:12px;
+                .zchat-description-check-unread{
+                    width: 1px;
+                    fill:rgb(192, 192, 192);
+                    margin-right: 6px;
+                }
+                .zchat-description-check-read{
+                     width: 16px;
+                    fill:red;
+                     margin-right: 6px;
+                }
+                .zchat-description-text{
+                    width:20px;
+                    flex-grow: 1;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            .zchat-list-item-action {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .zchat-list-item-action-text{
+                    display: flex;
+                    align-content: center;
+                    .badge{
+                        font-size: 0.7rem;
+                        color: rgb(110, 110, 110);
+                        background-color: rgb(201, 201, 201);
+                        border-radius: 3px;
+                    }
+                }
+                
+                .zchat-list-item-action-icon {
+                    margin-right: 1px;
+                    width:max-content;
+                    width:16px;
+                    height: 18px;
+                    position: relative;
+                    .zchat-mute-svg {
+                        width:18px;
+                        position: absolute;
+                        top: calc(50% - 8px);
+                        left: calc(50% - 8px);
+                    }
+                    .zchat-circle-svg {
+                        position: absolute;
+                        fill: red;
+                        top: calc(50% - 5px);
+                        left: calc(50% - 5px);
+                    }
+                    .zchat-pin-svg {
+                        position: absolute;
+                        top: calc(50% - 5px);
+                        left: calc(50% - 5px);
+                    }
+                    .zchat-menu-svg {
+                        position: absolute;
+                        top: calc(50% - 8px);
+                        left: calc(50% - 8px);
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.zchat-list-item:hover {
+    background-color: rgb(230, 230, 230);
+}

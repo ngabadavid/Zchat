@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, ContentChildren, Input, OnInit, Query, QueryList } from "@angular/core";
 import { ZchatBaseComponent } from "../zchat-base.component";
+import { ZchatListItemComponent } from "../zchat-list-item/zchat-list-item.component";
 
 
 @Component({

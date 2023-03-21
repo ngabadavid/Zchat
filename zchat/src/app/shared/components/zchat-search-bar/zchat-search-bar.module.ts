@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ZchatSearchBarComponent } from './zchat-search-bar.component';
 import { ZchatButtonModule } from '../zchat-button/zchat-button.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
