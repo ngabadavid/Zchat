@@ -1,72 +1,97 @@
 .zchat-caret-remover::after {
     display: none !important;
 }
-.zchat-dropdown-menu{
+
+.zchat-dropdown-menu {
     position: relative;
+
     .zchat-button-svg {
         position: absolute;
         top: calc(50% - 12px);
         left: calc(50% - 12px);
     }
-    .zchat-icon-svg{
+
+    .zchat-icon-svg {
         margin-right: 8px;
     }
 
     .zchat-dropdown-menu-body {
-        width:200px;
-     
+        width: 200px;
+
         .zchat-dropdown-item {
-            width:calc(100% - 10px);
+            width: calc(100% - 10px);
             display: flex;
             align-items: center;
             justify-content: space-between;
             border-radius: inherit;
             margin-left: 5px;
             margin-right: 5px;
-            .test{
+
+            .test {
                 display: flex;
                 align-items: center;
             }
-            .zchat-sub-dropdown-menu-body{
-                transform: translate(170px, 48px);
-                .zchat-sub-dropdown-item {
-                    width:calc(100% - 10px);
-                    display: flex;
-                    align-items: center;
-                    justify-content: start;
-                    border-radius: inherit;
-                    margin-left: 5px;
-                    margin-right: 5px;
-                }
-            }
         }
-    
-        
+
+
     }
-    .zchat-dropdown-item{
+
+    .zchat-dropdown-item {
         .zchat-sub-dropdown-menu-body {
-            width:200px;
+            width: 200px;
+
             .zchat-dropdown-item {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
             }
-        
-            
+
+
         }
     }
-    
+
 }
 
-.zchat-dropdown-new-chat{
-    .zchat-dropdown-new-chat-body{
+.zchat-dropdown-new-chat {
+    .zchat-dropdown-new-chat-body {
         width: 300px;
-        height:550px;
-        .zchat-dropdown-new-chat-list{
+        height: 550px;
+
+        .zchat-dropdown-new-chat-list {
             .zchat-list-header-title {
                 margin-left: 0px;
             }
         }
-        
+
+    }
+}
+
+.zchat-container {
+    .zchat-list {
+        .zchat-list-header-action {}
+    }
+
+    .zchat-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        .header{
+            height: 50px;
+            background-color: blue;
+        }
+        .content{
+            height: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            overflow-y: scroll;
+            //background-color: red;
+        };
+        .zchat-main-input {
+            height: 50px;
+            //position: relative;
+            //
+            //bottom: 0px;
+        }
     }
 }

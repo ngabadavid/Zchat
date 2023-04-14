@@ -11,6 +11,21 @@
     </ng-container>
   </zchat-button>
   <div class="zchat-dropdown-new-chat-body" aria-labelledby="dropdown-new-chat-toggler" ngbDropdownMenu>
-
-      <zchat-list class="zchat-dropdown-new-chat-list" [listTitle]="'New Chat'"></zchat-list>
+    <zchat-list [listTitle]="'New Chat'">
+      <div list-body>
+        <zchat-list-item [item]="{ pictureLink : './assets/images/zchat-profil-picture.png'}" [listItemContentTemplate]="listItemContentTemplate">
+          <ng-template #listItemContentTemplate>
+            <strong>New group</strong>
+          </ng-template>
+        </zchat-list-item>
+        <div class="zchat-list-sub-title">All contacts</div>
+        <div *ngFor="let item of items">
+          <zchat-list-item [item]="item" [listItemContentTemplate]="listItemContentTemplate">
+            <ng-template #listItemContentTemplate>
+              <zchat-contact-list-item-content [item]="item"></zchat-contact-list-item-content>
+            </ng-template>
+          </zchat-list-item>
+        </div>
+      </div>
+    </zchat-list>
   </div>

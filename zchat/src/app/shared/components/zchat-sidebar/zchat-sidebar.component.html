@@ -1,7 +1,12 @@
 <div class="zchat-sidebar">
-    <div class="d-flex flex-column flex-shrink-0">
-      t  
-      <!--<a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+  <div class="zchat-sidebar-top-end">
+    <ng-content select="[zchat-sidebar-items-top-end]"></ng-content>
+  </div>
+  <div class="zchat-sidebar-botom-end">
+    <ng-content select="[zchat-sidebar-items-bottom-end]"></ng-content>
+  </div>
+   <!-- <div class="d-flex flex-column flex-shrink-0">
+      <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
           <svg class="bi" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
           <span class="visually-hidden">Icon-only</span>
         </a>
@@ -43,6 +48,6 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Sign out</a></li>
           </ul>
-        </div>-->
-      </div>
+        </div>
+      </div>-->
 </div>

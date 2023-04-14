@@ -4,7 +4,8 @@
     width: auto;
     height: 100%;
     background-color: white;
-padding-right: 3px;
+    padding-right: 3px;
+
     .zchat-list-header {
         display: flex;
         flex-direction: column;
@@ -27,6 +28,7 @@ padding-right: 3px;
                 display: flex;
             }
         }
+
         .zchat-list-header-second-row {
             margin-bottom: 10px;
         }
@@ -34,7 +36,16 @@ padding-right: 3px;
 
     .zchat-list-body {
         width: 100%;
+        height: 100%;
         overflow-y: scroll;
+        overflow-x: hidden;
+
+        .zchat-list-sub-title {
+            margin-top: 2px;
+            margin-bottom: 2px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     }
 }
 

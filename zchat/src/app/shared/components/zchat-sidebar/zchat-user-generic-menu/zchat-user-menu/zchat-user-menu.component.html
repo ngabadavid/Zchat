@@ -1,7 +1,8 @@
-<div class="zchat-layout">
-    <zchat-header></zchat-header>
-    <div class="zchat-body">
-        <ng-content></ng-content>
+<zchat-generic-menu>
+    <div toggler>
+        <img class="zchat-profil-picture" [src]="userProfilPicture" alt="zchat-profile-picture">
+    </div>
+    <div sidebar>
         <zchat-sidebar>
             <div zchat-sidebar-items-top-end>
                 <zchat-sidebar-item >
@@ -14,7 +15,7 @@
                 </zchat-sidebar-item>
             </div>
             <div zchat-sidebar-items-bottom-end>
-                <zchat-sidebar-item >
+                <zchat-sidebar-item [description]="'Profil'">
                     <div sidebar-item-icon>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="zchat-sidebar-item-icon bi bi-gear" viewBox="0 0 16 16">
                             <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
@@ -22,14 +23,8 @@
                           </svg>
                     </div>
                 </zchat-sidebar-item>
-                <zchat-sidebar-item >
-                    <div sidebar-item-icon>
-                     <zchat-user-menu></zchat-user-menu>
-                          
-                    </div>
-                </zchat-sidebar-item>
             </div>
         </zchat-sidebar>
-       
     </div>
-</div>
+    <div content></div>
+</zchat-generic-menu>

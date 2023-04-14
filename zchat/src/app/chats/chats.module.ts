@@ -6,10 +6,14 @@ import { RouterModule } from '@angular/router';
 import { CHATS_ROUTES } from './chats.routes';
 import { ZchatChatsListHeaderNewChatModule } from './zchat-chats-list-header-new-chat/zchat-chats-list-header-new-chat.module';
 import { ZchatChatsListHeaderMenuModule } from './zchat-chats-list-header-menu/zchat-chats-list-header-menu.module';
+import { ZchatChatBoxComponent } from './zchat-chat-box/zchat-chat-box.component';
+import { ZchatChatHeaderComponent } from './zchat-chat-header/zchat-chat-header.component';
 
 @NgModule({
   declarations: [
-    ChatsContainer
+    ChatsContainer,
+    ZchatChatBoxComponent,
+    ZchatChatHeaderComponent
   ],
   imports: [
     CommonModule,

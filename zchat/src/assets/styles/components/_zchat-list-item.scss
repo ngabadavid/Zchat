@@ -6,8 +6,8 @@
 
     margin-top: 2px;
     margin-bottom: 2px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 12px;
+    margin-right: 12px;
 
     font-size: 0.9em;
 
@@ -15,13 +15,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 64px;
-        height: 64px;
-
-        .zchat-profile-picture {
+        width: 72px;
+        height: 72px;
+        .zchat-profil-picture {
             width: 48px;
             height: 48px;
             border-radius: 50%;
+            
         }
 
     }
@@ -65,7 +65,7 @@
                 
                 margin-right:12px;
                 .zchat-description-check-unread{
-                    width: 1px;
+                    width: 16px;
                     fill:rgb(192, 192, 192);
                     margin-right: 6px;
                 }
@@ -96,7 +96,6 @@
                         border-radius: 3px;
                     }
                 }
-                
                 .zchat-list-item-action-icon {
                     margin-right: 1px;
                     width:max-content;
@@ -135,3 +134,8 @@
 .zchat-list-item:hover {
     background-color: rgb(230, 230, 230);
 }
+
+.zchat-icon-svg{
+    margin-right: 8px;
+}
+

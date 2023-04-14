@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { DEFAULT_PROFIL_PICTURE_LINK } from '../../constants/global.constants';
 
 @Component({
   selector: 'zchat-layout',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ZchatLayoutComponent implements OnInit {
 
+  @Input() userProfilPicture: string = DEFAULT_PROFIL_PICTURE_LINK;
   constructor() { }
 
   ngOnInit(): void {

@@ -12,8 +12,6 @@ export class ZchatSearchBarComponent extends ZchatBaseComponent {
     super();
   }
 
-  override ngOnInit(): void {}
-
   onSubmit() {
     console.log("4=> "+this.searchBarValue)
     console.log("yes");

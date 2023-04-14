@@ -1,0 +1,1 @@
+export const DEFAULT_PROFIL_PICTURE_LINK = "./assets/images/zchat-profil-picture.png";
