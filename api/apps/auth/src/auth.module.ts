@@ -17,7 +17,7 @@ import { UserEntity } from './user.entity';
         type: 'postgres',
         url: configService.get('POSTGRES_URI'),
         autoLoadEntities: true,
-        synchronize: true // shouldn't be use in production
+        synchronize: true, // shouldn't be use in production
       }),
       inject: [ConfigService],
     }),
