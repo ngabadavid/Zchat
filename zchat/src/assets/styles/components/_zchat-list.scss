@@ -1,0 +1,55 @@
+.zchat-list-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    background-color: white;
+    padding-right: 3px;
+
+    .zchat-list-header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .zchat-list-header-first-row {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            .zchat-list-header-title {
+                @extend #{'.fs-5','.fw-semibold'};
+                margin-left: 16px;
+            }
+
+            .zchat-list-header-action {
+                display: flex;
+            }
+        }
+
+        .zchat-list-header-second-row {
+            margin-bottom: 10px;
+        }
+    }
+
+    .zchat-list-body {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        .zchat-list-sub-title {
+            margin-top: 2px;
+            margin-bottom: 2px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+
+.zchat-main-container {
+    width: 100%;
+    height: 100%;
+}

@@ -9,4 +9,8 @@ export const APP_ROUTES: Routes = [
         path: 'status',
         loadChildren: () => import('./status/status.module').then((m) => m.StatusModule)
     },
+    {
+        path: '**',
+        loadChildren: () => import('./chats/chats.module').then((m) => m.ChatsModule)
+    }
 ]

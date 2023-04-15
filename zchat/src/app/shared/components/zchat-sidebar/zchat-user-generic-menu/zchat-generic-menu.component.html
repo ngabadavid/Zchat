@@ -1,0 +1,15 @@
+<div class="zchat-dropdown-generic-menu" ngbDropdown>
+    <div class="zchat-caret-remover" id="dropdown-generic-menu-toggler" ngbDropdownToggle>
+        <ng-content select="[toggler]"></ng-content>
+    </div>
+    <div class="zchat-dropdown-generic-menu-body" aria-labelledby="dropdown-generic-menu-toggler" ngbDropdownMenu>
+        <div class="zchat-dropdown-generic-menu-contentainer">
+            <div class="zchat-dropdown-generic-menu-sidebar">
+                <ng-content select="[sidebar]"></ng-content>
+            </div>
+            <div class="zchat-dropdown-generic-menu-content">
+                <ng-content select="[content]"></ng-content>
+            </div>
+        </div>
+    </div>
+</div>

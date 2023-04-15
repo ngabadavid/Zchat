@@ -1,0 +1,54 @@
+.zchat-chat-box-line {
+    display: flex;
+    align-items: center;
+
+    .zchat-chat-box {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        border-radius: 5px;
+        padding: 5px;
+
+        .zchat-chat-box-author {
+            @extend #{'.fw-bold'};
+            text-align: start;
+        }
+
+        .zchat-chatbox-content {}
+
+        .zchat-chat-box-information {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            .zchat-chat-box-time {
+                @extend #{'.fw-light'};
+                font-size: 0.7rem;
+                text-align: end;
+                white-space: nowrap;
+            }
+
+            .zchat-chat-box-check {
+                margin-top: -3px;
+                margin-left: 3px;
+            }
+        }
+    }
+
+}
+
+.is-author {
+    justify-content: end;
+
+    .zchat-chat-box {
+        background-color: rgb(255, 50, 50);
+    }
+}
+
+.is-not-author {
+    justify-content: start;
+
+    .zchat-chat-box {
+        background-color: rgb(220, 220, 220);
+    }
+}

@@ -1,0 +1,48 @@
+.zchat-main-input {
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    width:100%;
+    .zhcat-main-input-multimedia {
+        display: flex;
+        align-items: center;
+        .zhcat-main-input-multimedia-button {
+        }
+    }
+
+    .zchat-main-input-form {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+
+        .zchat-main-input-text-input {
+            width: 100%;
+            border-radius: 3px;
+            border: none;
+            padding-left: 12px;
+            padding-right: 12px;
+            margin-left:5px;
+            margin-right: 5px;;
+        }
+
+        .zchat-main-input-text-input:focus {
+            outline: none;
+            background-color: white
+        }
+
+        .empty-input {
+            @extend #{'.fw-light'};
+            font-size: 0.9rem;
+        }
+
+        .not-empty-input {
+            font-size: 0.9rem;
+        }
+
+        .zchat-main-input-send-button {
+
+        }
+    }
+}

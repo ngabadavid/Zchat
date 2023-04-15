@@ -1,0 +1,14 @@
+<div class="zchat-list-container">
+  <div class="zchat-list-header">
+    <div class="zchat-list-header-first-row">
+      <div class="zchat-list-header-title ">{{listTitle}}</div>
+      <ng-content select="[list-header-action]"></ng-content>
+    </div>
+    <div *ngIf="searchBar" class="zchat-list-header-second-row">
+      <zchat-search-bar></zchat-search-bar>
+    </div>
+  </div>
+  <div class="zchat-list-body list-group list-group-flush border-bottom scrollarea">
+    <ng-content select="[list-body]"></ng-content>
+  </div>
+</div>

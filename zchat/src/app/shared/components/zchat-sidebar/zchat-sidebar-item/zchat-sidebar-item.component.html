@@ -1,0 +1,9 @@
+<div [ngClass]="description !='' && description != undefined ? 'zchat-sidebar-item-with-description' : 'zchat-sidebar-item-without-description'">
+    <div class="zchat-sidebar-item-icon-container">
+        <ng-content select="[sidebar-item-icon]"></ng-content>
+    </div>
+    <div class="zchat-sidebar-item-description" *ngIf="description !=''">
+        {{description}}
+    </div>
+</div>
+  

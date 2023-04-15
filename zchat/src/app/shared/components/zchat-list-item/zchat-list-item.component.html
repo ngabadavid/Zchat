@@ -1,0 +1,13 @@
+<div class="zchat-list-item">
+  <div class="zchat-list-item-picture">
+    <div *ngIf="item.pictureLink; else defaultProfilPicture">
+      <img class="zchat-profil-picture" [src]="item.pictureLink" alt="zchat-profile-picture">
+    </div>
+    <ng-template #defaultProfilPicture>
+      <img class="zchat-profil-picture" [src]="defaultProfilPictureLink" alt="zchat-profile-picture">
+    </ng-template>
+  </div>
+  <div class="zchat-list-item-content">
+    <ng-container *ngTemplateOutlet="listItemContentTemplate;context:{$implicit: item}"></ng-container>
+  </div>
+</div>
